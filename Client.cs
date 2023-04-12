@@ -12,7 +12,19 @@ namespace Gestion_Hotel
         public string Prenom { get; set; }
         public string Courriel { get; set; }
         public string CarteCredit { get; set; }
-        public int NumeroChambre { get; set; }
+        private int _numeroChambre;
+
+        public int NumeroChambre
+        {
+            get { return _numeroChambre; }
+            set
+            {
+                if (value > 0)
+                    _numeroChambre = value;
+                else
+                    throw new ArgumentException("Le numéro de chambre doit être supérieur à zéro.");
+            }
+        }
 
         public Client(string nom, string prenom, string courriel, string carteCredit, int numeroChambre)
         {
