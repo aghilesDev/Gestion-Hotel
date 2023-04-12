@@ -34,5 +34,10 @@ namespace Gestion_Hotel
             CarteCredit = carteCredit;
             NumeroChambre = numeroChambre;
         }
+
+        public override string ToString()
+        {
+            return $"Nom: {Nom}, Prénom: {Prenom}, Courriel: {Courriel}, Carte de crédit: {CarteCredit}, Numéro de chambre: {NumeroChambre}";
+        }
     }
 }

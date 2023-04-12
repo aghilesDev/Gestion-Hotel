@@ -5,11 +5,8 @@
         static void Main(string[] args)
         {
             Client client1 = new Client("Mohammed", "Ali", "mohammed.ali@gmail.com", "1234-5678-9012-3456", 101);
-            Console.WriteLine(client1.Nom); 
-            Console.WriteLine(client1.Prenom); 
-            Console.WriteLine(client1.Courriel); 
-            Console.WriteLine(client1.CarteCredit); 
-            Console.WriteLine(client1.NumeroChambre); 
+            Console.WriteLine(client1); 
+             
 
         }
     }
